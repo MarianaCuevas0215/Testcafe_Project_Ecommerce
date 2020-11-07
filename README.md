@@ -13,20 +13,20 @@ Creation and execution of E2E automated tests using Testcafe tool to validate fu
 For Windows 10:
 
 To install Testcafe tool, run the following command:
-npm install -g testcafe
+- npm install -g testcafe
 
 Ensure that Node.js and npm are installed on your computer and run the following command:
-npm install -g testcafe
+- npm install -g testcafe
 
 # Considerations for the execution 
 
 To run a test run the following command:
-testcafe chrome tests/ 
-p.e: testcafe chrome mi_Cuenta.js
+- testcafe chrome tests/ 
+- p.e: testcafe chrome mi_Cuenta.js
 
-To run an specific test script, please run the following command:
-testcafe chrome tests/ -t "nameTest"
-p.e testcafe chrome mi_Cuenta.js -t "Verify that user can create an account"
+To run a specific test script, please run the following command:
+- testcafe chrome tests/ -t "nameTest"
+- p.e testcafe chrome mi_Cuenta.js -t "Verify that user can create an account"
 
 To run the tests and get a report, please consider the next commands:
 

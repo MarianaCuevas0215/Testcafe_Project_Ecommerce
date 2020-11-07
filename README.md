@@ -30,12 +30,7 @@ p.e testcafe chrome mi_Cuenta.js -t "Verify that user can create an account"
 
 To run the tests and get a report, please consider the next commands:
 
-testcafe chrome,firefox:headless mi_Cuenta.js --reporter html:Reports/MyAccount.html
-testcafe chrome,firefox:headless homePage.js --reporter html:Reports/HomePage.html
-testcafe chrome,firefox:headless listProducts.js --reporter html:Reports/ListProducts.html
-testcafe chrome,firefox:headless shopping.js --reporter html:Reports/Shopping.html
-
-
-
-
-
+- testcafe chrome,firefox:headless mi_Cuenta.js --reporter html:Reports/MyAccount.html
+- testcafe chrome,firefox:headless homePage.js --reporter html:Reports/HomePage.html
+- testcafe chrome,firefox:headless listProducts.js --reporter html:Reports/ListProducts.html
+- testcafe chrome,firefox:headless shopping.js --reporter html:Reports/Shopping.html

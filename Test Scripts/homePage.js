@@ -2,7 +2,6 @@ import { Selector } from 'testcafe';
 import page from './pageModel';
 import { data } from './data';
 
-
 fixture ('Home Page Module')
     .page('http://automationpractice.com/index.php');
 
@@ -49,6 +48,7 @@ test('Verify that a user can send a message.', async t =>{
 
     await t
         .expect(page.customerServicePage.exists).ok()
+
     await t
         .click(page.csSubjectHeading_list)
 
@@ -58,7 +58,6 @@ test('Verify that a user can send a message.', async t =>{
         .expect(page.csEmail_input.value).contains("dummy")   
         .typeText(page.csMessage_input, data.message, {speed: 0.01}) 
         .expect(page.csMessage_input.value).contains("I would like to know")
-
 
     await t
         .click(Selector('#fileUpload'))
@@ -117,8 +116,7 @@ test('Verify when a user types a strange keyword.', async t =>{
     
     await t
         .expect(page.counter_label.innerText).eql("0 results have been found.")
-        .expect(page.searchAlertWarning2.innerText).contains('No results were found for your search');
-    
+        .expect(page.searchAlertWarning2.innerText).contains('No results were found for your search');    
 
 });
 

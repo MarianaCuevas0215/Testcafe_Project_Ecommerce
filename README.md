@@ -9,5 +9,33 @@ The purpose of this repository is educational. These tests are part of an assess
 # Scope
 Creation and execution of E2E automated tests using Testcafe tool to validate functionalities in an E-commerce site. Within the scope will be validated the following modules: Home page, Catalog products, Shopping products and My account. The tests should be run in Chrome and FF browsers at least. 
 
+# Installation
+For Windows 10:
+
+To install Testcafe tool, run the following command:
+npm install -g testcafe
+
+Ensure that Node.js and npm are installed on your computer and run the following command:
+npm install -g testcafe
+
+# Considerations for the execution 
+
+To run a test run the following command:
+testcafe chrome tests/ 
+p.e: testcafe chrome mi_Cuenta.js
+
+To run an specific test script, please run the following command:
+testcafe chrome tests/ -t "nameTest"
+p.e testcafe chrome mi_Cuenta.js -t "Verify that user can create an account"
+
+To run the tests and get a report, please consider the next commands:
+
+testcafe chrome,firefox:headless mi_Cuenta.js --reporter html:Reports/MyAccount.html
+testcafe chrome,firefox:headless homePage.js --reporter html:Reports/HomePage.html
+testcafe chrome,firefox:headless listProducts.js --reporter html:Reports/ListProducts.html
+testcafe chrome,firefox:headless shopping.js --reporter html:Reports/Shopping.html
+
+
+
 
 
